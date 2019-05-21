@@ -1,0 +1,70 @@
+html {
+    background-color: #55595E !important;
+}
+
+body {
+    background-color: #55595E !important;
+    padding: 50px !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 30px;
+}
+
+ul > li {
+    padding-right: 30px;
+}
+
+span {
+    color: white !important;
+}
+
+li > span:hover {
+    color: blue!important;
+    cursor: pointer;
+}
+
+#console-prompt {
+    font-weight: 500;
+    color: #91E26B!important;
+}
+
+.directory-text {
+    color: #73ABFF!important;
+}
+
+.close-button {
+    float:right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor:pointer;
+    color: #2e2e2d;
+    border: none;
+    border-radius: 30px;
+    background: #b83030;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;       
+}
+.close-button:hover {
+    opacity: 0.8;
+}
+
+.close-button:before {
+    content: "×";
+}
+
+.modal-header {
+    background: #55595E;
+}
+
+.modal-60 {
+    width: 60%;
+}
+
+.modal-body, .modal-content {
+    height: calc(100vh - 200px)!important;
+    max-height: calc(100vh - 200px)!important;
+    background: rgb(226, 226, 226);
+}

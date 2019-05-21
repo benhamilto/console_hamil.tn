@@ -1,0 +1,38 @@
+extends layout
+block scripts 
+    script(src="/js/index.js")
+block content
+    .container-fluid
+        .row
+            .col-md-12.pull-left
+                span#console-prompt ben@hamil.tn:
+                    span#directory.directory-text
+                    span.directory-text ~/$ 
+                    span#command-field ls
+        .row
+            .col-md-12
+                ul.list-inline.nav
+                    li
+                        span.ls-item(data-target="#about-modal", data-toggle="modal", data-command="./about.sh") about
+                    li
+                        span.ls-item(data-command="cd projects/") projects
+                    li
+                        span.ls-item(data-command="./contact.sh") contact
+        #about-modal.modal.fade
+            #about-dialog.modal-dialog.modal-60
+                .modal-content
+                    .modal-header
+                        button.close-button.pull-right(type="button", data-dismiss="modal")
+                        h4.text-center Hello
+                    .modal-body
+                        .row
+                            #about-sidebar.col-md-3
+                                .panel.panel-default
+                                    .panel-body
+                                        p hello
+                            #about-body.col-md-9
+                                .panel.panel-default
+                                    .panel-body
+                                        p hello
+                    
+
